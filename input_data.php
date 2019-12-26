@@ -16,7 +16,7 @@
     </div>
     <div class="container-main">
         <div class="container-input">
-            <h2 style="text-align: center"><b>Input data produk</b></h2>
+            <h2 style="text-align: center"><b>Input Menu</b></h2>
             <form method="post" action="input_data.php" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-25">

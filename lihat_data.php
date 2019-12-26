@@ -14,7 +14,7 @@
             <a href="index.php">Home</a>
         </div>
     </div>
-    <h2 style="text-align: center"><b>Data Produk UD. Makanan Sehat</b></h2>
+    <h2 style="text-align: center"><b>Data Menu Yoga's Restaurant</b></h2>
     <div class="container-main">
         <?php
             $host = "myfirstprojectappserver.database.windows.net";
@@ -44,7 +44,7 @@
                         </tr>";
                     foreach($menus as $menu) {
                         echo "<tr><td>".$menu['id']."</td>";
-                        echo "<tr><td>".$menu['kategori']."</td>";
+                        echo "<td>".$menu['kategori']."</td>";
                         echo "<td>".$menu['nama']."</td>";
                         echo "<td>".$menu['harga']."</td>";
                         echo "<td>".$menu['deskripsi']."</td></tr>";
