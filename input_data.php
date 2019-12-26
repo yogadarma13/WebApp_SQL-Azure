@@ -59,42 +59,43 @@
             </form>
         </div>
     </div>
-</body>
-</html>
 
-<?php
-    $host = "myfirstprojectappserver.database.windows.net";
-    $user = "yogadarma";
-    $pass = "yogaITEHCREW92";
-    $db = "Menu";
+    <?php
+        $host = "myfirstprojectappserver.database.windows.net";
+        $user = "yogadarma";
+        $pass = "yogaITEHCREW92";
+        $db = "myfirstdb";
 
-    try {
-        $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
-        $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    } catch(Exception $e) {
-        echo "Failed: " . $e;
-    }
-
-    if (isset($_POST['submit'])) {
         try {
-            $kategori = $_POST['kategori'];
-            $nama = $_POST['namaproduk'];
-            $harga = $_POST['hargaproduk'];
-            $deskripsi = $_POST['deskripsi'];
-            // Insert data
-            $sql_insert = "INSERT INTO Menu (kategori, nama, harga, deskripsi) 
-                        VALUES (?,?,?,?)";
-            $stmt = $conn->prepare($sql_insert);
-            $stmt->bindValue(1, $kategori);
-            $stmt->bindValue(2, $nama);
-            $stmt->bindValue(3, $harga);
-            $stmt->bindValue(4, $deskripsi);
-            $stmt->execute();
+            $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
+            $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }
-        echo '<script language="javascript">';
-        echo 'alert("message successfully sent")';
-        echo '</script>';
-    }
-?>
+
+        if (isset($_POST['submit'])) {
+            try {
+                $kategori = $_POST['kategori'];
+                $nama = $_POST['namaproduk'];
+                $harga = $_POST['hargaproduk'];
+                $deskripsi = $_POST['deskripsi'];
+                // Insert data
+                $sql_insert = "INSERT INTO Menu (kategori, nama, harga, deskripsi) 
+                            VALUES (?,?,?,?)";
+                $stmt = $conn->prepare($sql_insert);
+                $stmt->bindValue(1, $kategori);
+                $stmt->bindValue(2, $nama);
+                $stmt->bindValue(3, $harga);
+                $stmt->bindValue(4, $deskripsi);
+                $stmt->execute();
+            } catch(Exception $e) {
+                echo "Failed: " . $e;
+            }
+            echo '<script language="javascript">';
+            echo 'alert("message successfully sent")';
+            echo '</script>';
+        }
+    ?>
+
+</body>
+</html>
