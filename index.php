@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>UD. Makanan Sehat</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <div class="header">
-        <a class="logo">UD. Makanan Sehat</a>
+        <a class="logo">Yoga's Restaurant</a>
         <div class="header-right">
             <a href="#">Home</a>
         </div>

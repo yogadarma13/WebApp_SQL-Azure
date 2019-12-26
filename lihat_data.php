@@ -9,7 +9,7 @@
 
 <body>
     <div class="header">
-        <a class="logo">UD. Makanan Sehat</a>
+        <a class="logo">Yoga's Restaurant</a>
         <div class="header-right">
             <a href="index.php">Home</a>
         </div>
