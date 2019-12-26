@@ -17,10 +17,10 @@
     <h2 style="text-align: center"><b>Data Menu Yoga's Restaurant</b></h2>
     <div class="container-main">
         <?php
-            $host = "myfirstprojectappserver.database.windows.net";
+            $host = "yogarestaurantappserver.database.windows.net";
             $user = "yogadarma";
-            $pass = "yogaITEHCREW92";
-            $db = "myfirstdb";
+            $pass = "yogaTIFUB2017";
+            $db = "yogarestaurantdb";
             try {
                 $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
                 $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
@@ -52,31 +52,14 @@
                     echo "</table>";
                 } else {
                     echo '<script language="javascript">';
-                    echo 'alert("message successfully sent")';
+                    echo 'alert("Data menu belum ada")';
                     echo '</script>';
                 }
             } catch(Exception $e) {
                 echo "Failed: " . $e;
             }
         ?>
-        <!-- <table>
-            <tr>
-                <th>Id</th>
-                <th>Kategori</th>
-                <th>Nama Produk</th>
-                <th>Harga Produk</th>
-                <th>Deskripsi Produk</th>
-            </tr>
 
-            <tr>
-                <td>1</td>
-                <td>Makanan</td>
-                <td>Nasi Uduk</td>
-                <td>Rp. 50000</td>
-                <td>Nasi uduk adalah nasi yang berisi berbagaia macam rasa yang enak dan lezat</td>
-            </tr>
-        </table> -->
     </div>
-
 </body>
 </html>

@@ -21,8 +21,8 @@
                 <div class="card">
                     <img src="images/input_data.png" alt="Input Data">
                     <div class="container">
-                        <h3><b>Input Data Makanan</b></h3>
-                        <p>Memasukan data makanan yang baru</p>
+                        <h3><b>Input Menu</b></h3>
+                        <p>Memasukan data menu yang baru</p>
                     </div>
                 </div>
             </a>
@@ -33,8 +33,8 @@
                 <div class="card">
                     <img src="images/lihat_data.png" alt="Lihat Data">
                     <div class="container">
-                        <h3><b>Lihat Data Makanan</b></h3>
-                        <p>Melihat data makanan yang telah diinputkan</p>
+                        <h3><b>Lihat Data Menu</b></h3>
+                        <p>Melihat data menu yang telah diinputkan</p>
                     </div>
                 </div>
             </a>

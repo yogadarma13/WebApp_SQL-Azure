@@ -61,10 +61,10 @@
     </div>
 
     <?php
-        $host = "myfirstprojectappserver.database.windows.net";
+        $host = "yogarestaurantappserver.database.windows.net";
         $user = "yogadarma";
-        $pass = "yogaITEHCREW92";
-        $db = "myfirstdb";
+        $pass = "yogaTIFUB2017";
+        $db = "yogarestaurantdb";
 
         try {
             $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
@@ -92,7 +92,7 @@
                 echo "Failed: " . $e;
             }
             echo '<script language="javascript">';
-            echo 'alert("message successfully sent")';
+            echo 'alert("Menu telah ditambahkan")';
             echo '</script>';
         }
     ?>
